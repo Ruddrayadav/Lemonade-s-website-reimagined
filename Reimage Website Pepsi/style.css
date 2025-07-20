@@ -1,0 +1,264 @@
+@font-face {
+    font-family:Product Sans;
+    src: url(./font/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: Product Sans B;
+    src: url(./font/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Product Sans;
+    color: white;
+  
+}
+html ,body{
+
+height: 100%;
+width: 100%;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+body{
+    overflow-x: hidden;
+}
+ 
+.main{
+    height: 100vh;
+    width: 100%;
+     background-color: orangered;
+}
+
+
+nav{
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    cursor: pointer;
+    z-index: 99;
+
+}
+.nav-ctrl{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    cursor: pointer;
+}
+nav i{
+    font-size: 1.5rem;
+}
+
+.one{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one h1{
+    font-size: 23vw;
+    font-family: Product Sans B;
+}
+.fanta{
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    /* height: 60vh; */
+    background-color: transparent;
+}
+.orange-cut{
+    position: absolute;
+    z-index: 1;
+    top: 8%;
+    left: 33%;
+}
+.orange{
+    position:absolute;
+    z-index: 3;
+    top: 48%;
+    right: 24%;
+    transform: rotate(4deg);
+}
+
+.two{
+    width: 100%;
+    height: 100vh;
+}
+
+.leaf{
+    position: absolute;
+    left: 1%;
+    top: 8%;
+    transform: rotate(290deg);
+}
+.leaf2{
+    position: absolute;
+    right: 0%;
+    top:18%;
+    width: 20%;
+    /* transform: rotate(30deg); */
+    overflow: hidden;
+}
+.backdrop{
+    position: absolute;
+    left: 8%;
+    top: 70%;
+    height:27vh;
+    width: 18vw;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    
+}
+.leaf3{
+    position: absolute;
+    left: 8%;
+    top: 68%;
+    
+}
+.two{
+    display: flex;
+    height: 100vh;
+   width: 100%;
+   background:#4d231c
+}
+
+.two-lft,.two-rgt {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vh;
+    word-wrap: wrap;
+     
+}
+.two-rgt h1{
+    font-family: Product Sans B;
+    font-size: 5vw;
+}
+.two-rgt p{
+    width: 90%;
+}
+
+.two-lft svg{
+    position: absolute;
+    margin-top: 19vh;
+    left: 9%;
+    
+    width: 30%;
+    transform: rotateX(50deg);
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 5vw;
+    width: 100%;
+    height: 100vh;
+     background:#4d231c;
+    
+}
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    width: 25vw;
+    height:70vh;
+    margin-top: 10vh;
+    background-color: wheat;
+    border-radius: 5%;
+}
+
+.card:nth-child(1){
+    background-color: rgba(3, 143, 3, 0.843);
+}
+
+.card:nth-child(2){
+    background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.card:nth-child(3){
+    background-color:rgba(231, 183, 11, 0.87)
+}
+.card h1{
+    font-size: 3vw;
+    margin-top: 40vh;
+
+}
+.card button{
+    font-size: 1vw;
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+     background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+  }
+  button:hover {
+  background-color:white;
+  transform: scale(1.1);
+  animation-duration: 1;
+  cursor: pointer;
+}
+
+.sprite{
+    position: absolute;
+    width: 90%;
+    height: 30%vh;
+    top:8%;
+    z-index: 3;
+}
+.lipton{
+    position: absolute;
+     top:1%;
+    width: 85%;
+    height: 30%vh;
+    z-index: 3;
+}
+.slicelemon{
+     position: absolute;
+      top:-12%;
+      width: 90%;
+      left:19;
+    height: 23%vh;
+     z-index: 1;
+}
+.apple{
+     position: absolute;
+      top:-18%;
+      width: 75%;
+      height: 17%vh;
+      right: 14%;
+      z-index: 2;
+      transform: rotateX(18);
+}
+.masti{
+    width: 100%;
+    background:#4d231c;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
